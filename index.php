@@ -23,9 +23,9 @@ ini_set('error_reporting', E_ALL);
 	$page = "home";
 	$inactive = 600; 
 
-// spl_autoload_register(function($class) {
-//     include 'models/' . $class . '.class.php';
-// });
+spl_autoload_register(function($class) {
+    include 'models/' . $class . '.class.php';
+});
 session_start();
 $access = ["home","crea_contact"];
 $accessUser = ["home","logout"];
